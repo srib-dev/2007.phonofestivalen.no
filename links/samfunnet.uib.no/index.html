@@ -1,0 +1,568 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+
+<html>
+
+<head><script type="text/javascript" src="https://web-static.archive.org/_static/js/bundle-playback.js?v=3grhEDQT" charset="utf-8"></script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/wombat.js?v=o9P2E1FK" charset="utf-8"></script>
+<script>window.RufflePlayer=window.RufflePlayer||{};window.RufflePlayer.config={"autoplay":"on","unmuteOverlay":"hidden","showSwfDownload":true};</script>
+<script type="text/javascript" src="https://web-static.archive.org/_static/js/ruffle/ruffle.js"></script>
+<script type="text/javascript">
+    __wm.init("https://web.archive.org/web");
+  __wm.wombat("http://samfunnet.uib.no:80/","20071208001007","https://web.archive.org/","web","https://web-static.archive.org/_static/",
+	      "1197072607");
+</script>
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/banner-styles.css?v=1utQkbB3" />
+<link rel="stylesheet" type="text/css" href="https://web-static.archive.org/_static/css/iconochive.css?v=3PDvdIFv" />
+<!-- End Wayback Rewrite JS Include -->
+
+
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1"/>
+
+<meta http-equiv="expires" content="0"/>
+
+<meta name="keywords" content="kultur i bergen,kultur,bergen,studentkultur,debatt,upop,vitenskap,pinnsvin,forum,operacafe"/>
+
+<title>
+
+  Studentersamfunnet i Bergen
+
+</title>
+
+<link rel="stylesheet" type="text/css" href="/web/20071208001007cs_/http://samfunnet.uib.no/samfunnet.css"/>
+
+<link rel="stylesheet" href="/web/20071208001007cs_/http://samfunnet.uib.no/newsfeeds/templates/css/css.css" type="text/css"/>
+
+<link rel="alternate" type="application/rss+xml" title="Studentersamfunnet" href="/web/20071208001007/http://samfunnet.uib.no/rss/samfunnet.xml"/>
+
+<link rel="alternate" type="application/rss+xml" title="Studentersamfunnet podcasts" href="/web/20071208001007/http://samfunnet.uib.no/podcasts/dircaster.php"/>
+
+<link rel="SHORTCUT ICON" href="/web/20071208001007im_/http://samfunnet.uib.no/favicon.ico"/>
+
+<!--[if lt IE 7]>
+<script type="text/javascript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+   var arVersion = navigator.appVersion.split("MSIE")
+   var version = parseFloat(arVersion[1])
+   if ((version >= 5.5) && (document.body.filters)) 
+   {
+      for(var i=0; i<document.images.length; i++)
+      {
+         var img = document.images[i]
+         var imgName = img.src.toUpperCase()
+         if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+         {
+            var imgID = (img.id) ? "id='" + img.id + "' " : ""
+            var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+            var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+            var imgStyle = "display:inline-block;" + img.style.cssText 
+            if (img.align == "left") imgStyle = "float:left;" + imgStyle
+            if (img.align == "right") imgStyle = "float:right;" + imgStyle
+            if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle
+            + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+            + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+            + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+            img.outerHTML = strNewHTML
+            i = i-1
+         }
+      }
+   }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+<!--
+
+/*
+** Fjerner tekst i et felt
+**
+*/
+
+function removeText(field,standard) { 
+	if(field.value == standard)
+	field.value = ''; 
+	}
+
+function sjekkTom(field, standard) {
+ if (field.value == '') {
+  field.value = standard;
+ }	
+}	
+
+/*
+** Funksjon som sjekker om e-postadressen er en gyldig e-postadresse
+** 
+*/
+
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function sjekkForm(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Ugyldig e-postadresse")==false)
+  {email.focus();return false}
+}
+}
+	
+	/*
+	** Funksjon som skjuler et element basert på id
+	*/
+function hidediv(id) {
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'none';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'none';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'none';
+		}
+	}
+}
+
+	/*
+	** Funksjon som viser et element basert på id
+	*/
+function showdiv(id) {		  
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'block';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'block';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'block';
+		}
+	}
+}
+
+/*
+** Værste hack ever, for å kunne poste info fra vår database til fribyte sin, om man har logget
+** Inn hos dem først. (Gi en AID som eksisterer hos dem). Tilgang gis ved innlogging som admin på internsider.
+** TODO: Fjern denne greia så fort som mulig, treige Fribyte folk må lage Arrdb2..
+*/
+function disp_prompt(arr_ID)
+{
+  var aid=prompt("skriv tall",arr_ID)
+  if (aid!=null && aid!="")
+    {
+    document.write("<form target=_blank action=\"http://arrdb.fribyte.uib.no/orger/editProgram.php?aid=" + aid + "\" method=\"post\"enctype=\"multipart/form-data\">")
+  }
+}
+//-->
+</script>
+</head><body>
+
+
+
+<div id="sentreringsboks">
+
+<div id="container">
+
+  <div id="headerplass">
+
+    <a href="index.php"><img src="/web/20071208001007im_/http://samfunnet.uib.no/grafikk/logokomphvit.png" alt="Samfunnet"/></a>
+
+  </div>
+<!--[if lt IE 7]>
+<script type="text/javascript">
+function correctPNG() // correctly handle PNG transparency in Win IE 5.5 & 6.
+{
+   var arVersion = navigator.appVersion.split("MSIE")
+   var version = parseFloat(arVersion[1])
+   if ((version >= 5.5) && (document.body.filters)) 
+   {
+      for(var i=0; i<document.images.length; i++)
+      {
+         var img = document.images[i]
+         var imgName = img.src.toUpperCase()
+         if (imgName.substring(imgName.length-3, imgName.length) == "PNG")
+         {
+            var imgID = (img.id) ? "id='" + img.id + "' " : ""
+            var imgClass = (img.className) ? "class='" + img.className + "' " : ""
+            var imgTitle = (img.title) ? "title='" + img.title + "' " : "title='" + img.alt + "' "
+            var imgStyle = "display:inline-block;" + img.style.cssText 
+            if (img.align == "left") imgStyle = "float:left;" + imgStyle
+            if (img.align == "right") imgStyle = "float:right;" + imgStyle
+            if (img.parentElement.href) imgStyle = "cursor:hand;" + imgStyle
+            var strNewHTML = "<span " + imgID + imgClass + imgTitle
+            + " style=\"" + "width:" + img.width + "px; height:" + img.height + "px;" + imgStyle + ";"
+            + "filter:progid:DXImageTransform.Microsoft.AlphaImageLoader"
+            + "(src=\'" + img.src + "\', sizingMethod='scale');\"></span>" 
+            img.outerHTML = strNewHTML
+            i = i-1
+         }
+      }
+   }    
+}
+window.attachEvent("onload", correctPNG);
+</script>
+<![endif]-->
+
+
+<script type="text/javascript">
+<!--
+
+/*
+** Fjerner tekst i et felt
+**
+*/
+
+function removeText(field,standard) { 
+	if(field.value == standard)
+	field.value = ''; 
+	}
+
+function sjekkTom(field, standard) {
+ if (field.value == '') {
+  field.value = standard;
+ }	
+}	
+
+/*
+** Funksjon som sjekker om e-postadressen er en gyldig e-postadresse
+** 
+*/
+
+function validate_email(field,alerttxt)
+{
+with (field)
+{
+apos=value.indexOf("@")
+dotpos=value.lastIndexOf(".")
+if (apos<1||dotpos-apos<2) 
+  {alert(alerttxt);return false}
+else {return true}
+}
+}
+
+function sjekkForm(thisform)
+{
+with (thisform)
+{
+if (validate_email(email,"Ugyldig e-postadresse")==false)
+  {email.focus();return false}
+}
+}
+	
+	/*
+	** Funksjon som skjuler et element basert på id
+	*/
+function hidediv(id) {
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'none';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'none';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'none';
+		}
+	}
+}
+
+	/*
+	** Funksjon som viser et element basert på id
+	*/
+function showdiv(id) {		  
+	if (document.getElementById) { // DOM3 = IE5, NS6
+		document.getElementById(id).style.display = 'block';
+	}
+	else {
+		if (document.layers) { // Netscape 4
+			document.id.display = 'block';
+		}
+		else { // IE 4
+			document.all.id.style.display = 'block';
+		}
+	}
+}
+
+/*
+** Værste hack ever, for å kunne poste info fra vår database til fribyte sin, om man har logget
+** Inn hos dem først. (Gi en AID som eksisterer hos dem). Tilgang gis ved innlogging som admin på internsider.
+** TODO: Fjern denne greia så fort som mulig, treige Fribyte folk må lage Arrdb2..
+*/
+function disp_prompt(arr_ID)
+{
+  var aid=prompt("skriv tall",arr_ID)
+  if (aid!=null && aid!="")
+    {
+    document.write("<form target=_blank action=\"http://arrdb.fribyte.uib.no/orger/editProgram.php?aid=" + aid + "\" method=\"post\"enctype=\"multipart/form-data\">")
+  }
+}
+//-->
+</script>
+
+ 
+         
+
+  <div id="toppmeny">
+
+        <a href="index.php?vm=program">Program</a> |
+	<a href="index.php?vm=nyheter">Nyheter</a> |
+	<a href="index.php?vm=informasjon">Informasjon</a> | 
+	<a href="index.php?vm=historie">Historie</a> |
+	<a href="index.php?vm=lenker">Lenker</a> |
+	<a href="/web/20071208001007/http://samfunnet.uib.no/plogger/">Bilder</a> |
+	<a href="index.php?vm=intern">Intern</a> |
+   <form method="get" action="https://web.archive.org/web/20071208001007/http://www.google.com/custom">
+              <input type="text" name="q" size="10" maxlength="255" value=""/>
+              <input type="submit" value="Søk"/>
+              <input type="hidden" name="sa" value="Search"/>
+              <input type="hidden" name="sitesearch" value="samfunnet.uib.no"/>
+
+    	</form>
+  </div>  
+<div class="venstremeny"><div class="venstremenyBoks"><b class="header1">Informasjon</b><ul>
+<li><a href="index.php?vm=informasjon&amp;valg=informasjon">Om samfunnet</a></li>
+<li><a href="index.php?vm=informasjon&amp;valg=komiteer">Komiteer</a></li>
+<li><a href="index.php?vm=informasjon&amp;valg=kontakt">Kontakt</a></li>
+<li><a href="index.php?vm=informasjon&amp;valg=bli_medlem">Bli medlem</a></li>
+<li><a href="index.php?vm=informasjon&amp;valg=filer&amp;type=offentlig">Offentlige dokumenter</a></li>
+</ul>
+
+
+   </div><form method="post" action="https://web.archive.org/web/20071208001007/https://mail.kvarteret.no/mailman/subscribe/studsamf-ekstern" onsubmit="return sjekkForm(this);">
+<div class="venstremenyBoks">
+<b class="header1">Motta ukesbrev </b>
+<input type="text" name="email" size="15" onfocus="JavaScript:removeText(this,&quot;Din epost&quot;);" onblur="JavaScript:sjekkTom(this,&quot;Din epost&quot;);" value="Din epost"/>
+<input type="submit" value="Send"/>
+</div>
+</form>
+<div class="samarbeid"><b class="header1">Galleriet:</b><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/plogger/index.php?level=picture&amp;id=144"><img src="https://web.archive.org/web/20071208001007im_/http://samfunnet.uib.no/plogger/thumbs/144-img_8347.JPG" border="0" alt="Klikk på bildet for å forstørre"/></a><br/>
+</div><div class="samarbeid"><b class="header1">Samarbeidspartnere:</b><a href="https://web.archive.org/web/20071208001007/http://www.harmonien.no/"><img src="/web/20071208001007im_/http://samfunnet.uib.no/grafikk/BFOlogo.png" border="0" alt="Bergen filharmoniske orkester"/></a><a href="https://web.archive.org/web/20071208001007/http://www.uib.no/"><img src="/web/20071208001007im_/http://samfunnet.uib.no/grafikk/uibLogo.png" border="0" alt="UIB"/></a><a href="https://web.archive.org/web/20071208001007/http://www.studia.no/"><img src="/web/20071208001007im_/http://samfunnet.uib.no/grafikk/studia.png" border="0" alt="Studia"/></a><a href="https://web.archive.org/web/20071208001007/http://www.kvarteret.no/"><img src="/web/20071208001007im_/http://samfunnet.uib.no/grafikk/logoer/Kvarteret.png" border="0" alt="Det Akademiske Kvarter"/></a><a href="https://web.archive.org/web/20071208001007/http://www.nsubergen.no/"><img src="/web/20071208001007im_/http://samfunnet.uib.no/grafikk/nsu.gif" border="0" alt="NSU Bergen"/></a></div></div><div class="innhold">
+
+	<b class="header1">Bli medlem</b>
+
+	<p class="ingress">
+	Vil du bli medlem av Studentersamfunnet?
+
+
+	</p>
+
+	<p class="brodtekst">
+
+	Som aktiv i Studentersamfunnet vil du få muligheten til å arrangere debatter og foredrag. Dette vil gi deg verdifull og relevant erfaring som du sannsynligvis vil få nyttet senere i livet. Du vil også få muligheten, gjennom våre arrangement, til å treffe fremstående personer innen offentligheten og kulturlivet.
+		</p>
+
+	<p class="brodtekst">
+	
+	Du vil få bred opplæring  av erfarne medlemmer dette inkluderer praktisk møteledelse, skriftlig korrespondanse, enkle regnskap og markedsføring.
+	Videre arrangerer Studentersamfunnet hvert semester en hyttetur med seminar der vi setter fokus på utvalgte emner. 
+		</p>
+
+	<p class="brodtekst">
+
+	Vi har selvsagt også andre arbeidsoppgaver hvis du ikke primært ønsker å arrangere møter dette vil bli tilpasset dine kvalifikasjoner.
+
+	</p>
+	<br/>
+
+	Om du er interessert så send en epost til <a href="https://web.archive.org/web/20071208001007/mailto:post@samfunnet.uib.no">post|a|samfunnet.uib.no</a>
+	<br/>
+	Eller se annen kontaktinformasjon  <a href="index.php?vm=informasjon&amp;valg=kontakt">her</a>
+
+
+</div>
+
+
+  <div class="nyhetsboks">
+    <b class="header1">Nyheter</b>
+	<b class="header2">2007-12-04 Nytt styre i Studentersamfunnet</b><p class="nyhet">Generalforsamlingen har valgt nytt styre i Studentersamfunnet.<br/>
+<br/>
+Styret består nå av:<b ..<br/>Les mer <a href="index.php?vm=nyheter&amp;id=105">her</a>.</p><b class="header2">2007-11-29 Generalforsamling</b><p class="nyhet">Studentersamfunnet arrangerer Generalforsamling fredag 30 november. I Lille auditoret på SV-fakultet ..<br/>Les mer <a href="index.php?vm=nyheter&amp;id=103">her</a>.</p><b class="header2">2007-11-29 Program over for høsten</b><p class="nyhet">Samfunnets program for høstsemesteret er nå over, om du vil se møter som har vært, se programlenken. ..<br/>Les mer <a href="index.php?vm=nyheter&amp;id=104">her</a>.</p><b class="header2">2007-11-22 Avlyst</b><p class="nyhet">Debatten "Internasjonale menneskerettigheter - et demokratisk problem?" som skulle være torsdag 29.1 ..<br/>Les mer <a href="index.php?vm=nyheter&amp;id=101">her</a>.</p></div>
+
+<div class="nyhetsboks">
+
+<!-- zFeeder template header -->
+<!-- header -->
+    <div class="zf_header"><span></span></div>
+<!-- channel -->
+    <div class="zf_channel"> 
+        <div class="zf_logo"><a href="https://web.archive.org/web/20071208001007/http://www.studvest.no/"><img src="https://web.archive.org/web/20071208001007im_/http://www.studvest.no/gfx/logo_liten.gif" border="0" alt="[logo]" title="Studvest.no - Siste nyhende"/></a></div> 
+        <div class="zf_controls">
+            <div class="zf_moreurl"><a href="/web/20071208001007/http://samfunnet.uib.no/index.php?zfmore=1&amp;zfposition=p1,p2,#zfchannel1"><span>more</span></a></div>
+            <div class="zf_hideurl"><a href="/web/20071208001007/http://samfunnet.uib.no/index.php?zfposition=p2,"><span>hide</span></a></div>
+        </div>
+
+
+
+        <b class="header1"><span>Studvest.no - Siste nyhende</span></b> 
+        <div class="zf_rss"><a href="https://web.archive.org/web/20071208001007/http://studvest.no/xml/nyhende.xml" title="RSS" target="_blank"><span>RSS</span></a></div>
+        <div class="zf_lastupdated"><span>Fri, 07 Dec 2007 23:25:12 GMT</span></div> 
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://www.studvest.no/nyhende.php?art_id=7742" target="_blank"><span>Ikke klart til semesterstart</span></a></div> 
+        <div class="zf_description"><span>Innflyttingen i det nye studentsenteret skulle vært i full gang. Men pakkingen er satt på vent og innflytting vil i beste fall kunne begynne i januar.</span></div> 
+        <div class="zf_pubdate"><span>2007-12-05Wed,  5 Dec 2007 00:00:00 +0100</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://www.studvest.no/nyhende.php?art_id=7732" target="_blank"><span>Gylden framtid for akademikere</span></a></div> 
+        <div class="zf_description"><span>Akademikere har aldri vært mer attraktive på arbeidsmarkedet. En høy andel 50-åringer vil rydde plass for ytterligere ansettelser i årene som kommer.</span></div> 
+        <div class="zf_pubdate"><span>2007-12-05Wed,  5 Dec 2007 00:00:00 +0100</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://www.studvest.no/nyhende.php?art_id=7748" target="_blank"><span>Dyrt å arrangere julebord på NHH</span></a></div> 
+        <div class="zf_description"><span>Studentene tvinges til å leie inn kjøkkenpersonale og renholdsfirma hvis de vil låne kantina.</span></div> 
+        <div class="zf_pubdate"><span>2007-12-05Wed,  5 Dec 2007 00:00:00 +0100</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://www.studvest.no/nyhende.php?art_id=7711" target="_blank"><span>Internasjonal matchmaking</span></a></div> 
+        <div class="zf_description"><span>Når over 300 utvekslingsstudenter ankommer Bergen etter jul, skal de slippe å henge opp kontaktannonser for å få norske venner.
+
+</span></div> 
+        <div class="zf_pubdate"><span>2007-12-05Wed,  5 Dec 2007 00:00:00 +0100</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://www.studvest.no/nyhende.php?art_id=7731" target="_blank"><span>Tyverier på jussen</span></a></div> 
+        <div class="zf_description"><span>Minst syv PCer er blitt stjålet på Det juridiske fakultet i høst. Samme mann er blitt observert ved flere av tilfellene.</span></div> 
+        <div class="zf_pubdate"><span>2007-12-05Wed,  5 Dec 2007 00:00:00 +0100</span></div>
+    </div>
+<!-- footer --> 
+    <div class="zf_footer"><span></span></div> 
+<!-- between --> 
+    <div class="zf_between"><span></span></div> 
+<!-- header -->
+    <div class="zf_header"><span></span></div>
+<!-- channel -->
+    <div class="zf_channel"> 
+        <div class="zf_logo"></div> 
+        <div class="zf_controls">
+            <div class="zf_moreurl"><a href="/web/20071208001007/http://samfunnet.uib.no/index.php?zfmore=2&amp;zfposition=p1,p2,#zfchannel2"><span>more</span></a></div>
+            <div class="zf_hideurl"><a href="/web/20071208001007/http://samfunnet.uib.no/index.php?zfposition=p1,"><span>hide</span></a></div>
+        </div>
+
+
+
+        <b class="header1"><span>Studentersamfunnet i Bergen - Podcast</span></b> 
+        <div class="zf_rss"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/dircaster.php" title="RSS" target="_blank"><span>RSS</span></a></div>
+        <div class="zf_lastupdated"><span>Sat, 08 Dec 2007 00:03:47 GMT</span></div> 
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/urix.mp3" target="_blank"><span>Urix - One Night Live Only</span></a></div> 
+        <div class="zf_description"><span>Urix - One Night Live Only - Studentersamfunnet i Bergen</span></div> 
+        <div class="zf_pubdate"><span>Wed, 07 Nov 2007 15:33:02 +0100</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke9.mp3" target="_blank"><span>akademiauke9</span></a></div> 
+        <div class="zf_description"><span>akademiauke9</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:35:58 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke6.mp3" target="_blank"><span>Kunnskapslftet - 7.februar 2006</span></a></div> 
+        <div class="zf_description"><span>Kunnskapslftet - 7.februar 2006 - Studentersamfunnet i Bergen/Studentradioen i Bergen - Kunnskapsminister ystein Djupedal</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:35:46 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke5.mp3" target="_blank"><span>akademiauke5</span></a></div> 
+        <div class="zf_description"><span>akademiauke5</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:35:35 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke16.mp3" target="_blank"><span>Scenekunsten utenfor institusjonen</span></a></div> 
+        <div class="zf_description"><span>Scenekunsten utenfor institusjonen - Studentersamfunnet i Bergen/Studentradioen i Bergen - Regissr Elsa Kvamme</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:35:23 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke14.mp3" target="_blank"><span>Hermeneutikk og politikk i et stvestperspektiv - 29.mars 2006</span></a></div> 
+        <div class="zf_description"><span>Hermeneutikk og politikk i et stvestperspektiv - 29.mars 2006 - Studentersamfunnet i Bergen/Studentradioen i Bergen -  Sissel Lgreid, Torgeir Skorgen, Knut Vikr, Nils Gilje, Erik Bjerck Hagen, Kari Jegerstedt, Anne Bang og Siri Meyer</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:35:10 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke13.mp3" target="_blank"><span>Ein kveld med Are Kalv  - 21.mars 2006</span></a></div> 
+        <div class="zf_description"><span>Ein kveld med Are Kalv  - 21.mars 2006 - Studentersamfunnet i Bergen/Studentradioen i Bergen - Are Kalv</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:34:55 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke11.mp3" target="_blank"><span>For folk flest? - 9.mars 2006</span></a></div> 
+        <div class="zf_description"><span>For folk flest? - 9.mars 2006 - Studentersamfunnet i Bergen/Studentradioen i Bergen - Formann Carl I. Hagen, professor Frank Aarebrot og kommentator Magnus Takvam</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:34:46 +0200</span></div>
+    </div>
+<!-- news -->
+    <div class="zf_news">  
+        <div class="zf_title"><a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/akademiauke10.mp3" target="_blank"><span>Norsk fagsprk ,ein saga blott? - 16.februar 2006</span></a></div> 
+        <div class="zf_description"><span>Norsk fagsprk ,ein saga blott? - 16.februar 2006 - Studentersamfunnet i Bergen/Studentradioen i Bergen - Professor Kirsti Koch Christensen, professor Erik Bjerck Hagen og forskningsdirektr Gjert Kristoffersen</span></div> 
+        <div class="zf_pubdate"><span>Thu, 18 Oct 2007 22:34:34 +0200</span></div>
+    </div>
+<!-- footer --> 
+    <div class="zf_footer"><span></span></div> 
+<!-- between --> 
+    <div class="zf_between"><span></span></div> 
+
+
+
+<a href="https://web.archive.org/web/20071208001007/http://samfunnet.uib.no/podcasts/dircaster.php"><img src="/web/20071208001007im_/http://samfunnet.uib.no/podcasts/podcast_logo_grey.png" border="0" alt="Podcast"/></a>
+
+</div>
+
+
+
+  <div id="footer">
+	
+© 2007 Studentersamfunnet i Bergen, tlf. 55 58 99 37 | PB 1822 Håkonsgaten, 5828 Bergen 
+
+  </div>
+
+</div>
+
+</div>
+<script src="https://web.archive.org/web/20071208001007js_/http://www.google-analytics.com/urchin.js" type="text/javascript">
+</script>
+<script type="text/javascript">
+_uacct = "UA-55531-1";
+urchinTracker();
+</script>
+</body>
+
+</html><!--
+     FILE ARCHIVED ON 00:10:07 Dec 08, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:45:21 Nov 12, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+-->
+<!--
+playback timings (ms):
+  captures_list: 0.443
+  exclusion.robots: 0.036
+  exclusion.robots.policy: 0.024
+  esindex: 0.007
+  cdx.remote: 17.093
+  LoadShardBlock: 114.374 (3)
+  PetaboxLoader3.datanode: 94.49 (4)
+  PetaboxLoader3.resolve: 223.916 (2)
+  load_resource: 259.965
+-->

@@ -1,0 +1,153 @@
+  div.container {
+    background-color: none;
+    position: absolute;
+    align: left;
+    left: 55px;
+    top: 55px;
+    width: 860px;
+    height: 600px;
+  }
+  div.meny {
+    position: relative;
+    padding: 4px;
+    left: 145px;
+    top: 178px;
+    width: 55px;
+    color: none;
+    }
+  div.logo {
+    background-color: yellow;
+    position: relative;
+    left: 290px;
+    top: 460px;
+    width: 320px;
+    height: 50px;
+}
+  div.marg {
+    position: absolute;
+    left: 632px;
+    top: 268px;
+    width: 150px;
+    height: 410px;
+}
+  div.marg p {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.2;
+    color: #008650;
+    font-size: 11px;
+    margin: 10px;
+  }
+  div.marg a {
+    color: #008650;
+  }
+  div.infoboks {
+    padding: 4px;
+    background-color: white;
+    border: 1px solid #00b26a;
+    position: absolute;
+    left: 282px;
+    top: 150px;
+    width: 340px;
+    height: 420px;
+    overflow: auto;
+}
+  div.infoboks a {
+    color: #004b27;
+  }
+  p {
+    font-family: Helvetica, Arial, sans-serif;
+    line-height: 1.3;
+    color: #004b27;
+    font-size: 12px;
+    margin: 10px;
+    padding: 1px 0 10px 0;
+  }
+bilde {
+    font-family: Helvetica, Arial, sans-serif;
+    color: #004b27;
+    font-size: 10px;
+    text-align: right;
+    padding: 1px 0 10px 0;
+  }
+  div.infoboks h {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #004b27;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+
+  div.infoboks h1 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    line-height: 1;
+    color: #004b27;
+    padding: 10px 0 10px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+ h2 {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 11px;
+    line-height: 0,7;
+    color: #004b27;
+    text-transform: uppercase;
+    margin: 10px;
+    font-weight: bold;
+
+  }
+
+  div.infoboks dato {
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 9px;
+    color: #008650;
+
+    font-weight: bold;
+  }
+  img {
+    margin: 0;
+    padding: 0;
+    border: 0;
+  }
+  h1 {
+    display: none;
+  }
+  img#tittel {
+    margin-bottom: 10px;
+  }
+  img#logo {
+    margin-top: 60px;
+  }
+  img#bakgrunn {
+    margin-top: 0px;
+    margin-left: 98px;
+  }
+  img#infoboks {
+    margin-bottom: 10px;
+    width: 303px;
+  }
+    img#meny {
+    margin-bottom: 4px;
+  }
+/*
+     FILE ARCHIVED ON 18:43:39 Jul 31, 2007 AND RETRIEVED FROM THE
+     INTERNET ARCHIVE ON 06:39:45 Nov 12, 2026.
+     JAVASCRIPT APPENDED BY WAYBACK MACHINE, COPYRIGHT INTERNET ARCHIVE.
+
+     ALL OTHER CONTENT MAY ALSO BE PROTECTED BY COPYRIGHT (17 U.S.C.
+     SECTION 108(a)(3)).
+*/
+/*
+playback timings (ms):
+  captures_list: 0.542
+  exclusion.robots: 0.042
+  exclusion.robots.policy: 0.031
+  esindex: 0.009
+  cdx.remote: 6.014
+  LoadShardBlock: 133.189 (3)
+  PetaboxLoader3.datanode: 87.556 (4)
+  PetaboxLoader3.resolve: 94.982 (3)
+  load_resource: 114.009
+*/
